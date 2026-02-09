@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify | TRACKER</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!--NAVBAR-->
+    <Header class="navbar">
+    <div class="logo">
+      <img src="Picture/logi.jpg" alt="Readify Logo">
+      <span>Readify</span>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">HOME</a>
+      <a href="explorer.html">EXPLORER</a>
+      <a class="active" href="tracker.html">TRACKER</a>
+      <a href="recommender.html">BOOKS</a>
+      <a href="flow.html">FLOW</a>
+      <a href="feedback.html">FEEDBACK</a>
+
+    </nav>
+    <div class="Hamburger" id="Hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+
+  </header>
+   <main class="wrap">
+    <section class="card">
+      <h2>Reading Progress Tracker</h2>
+      <p class="sub">Enter your book details and track your progress.</p>
+
+      <div class="form">
+        <div class="row">
+          <label for="totalPages">Total Pages</label>
+          <input type="number" id="totalPages" placeholder="e.g. 300" />
+        </div>
+
+        <div class="row">
+          <label for="pagesRead">Pages Read</label>
+          <input type="number" id="pagesRead" placeholder="e.g. 120" />
+        </div>
+
+        <div class="row">
+          <label for="pagesPerDay">Pages Per Day</label>
+          <input type="number" id="pagesPerDay" placeholder="e.g. 25" />
+        </div>
+
+        <div class="buttons">
+          <button id="calcBtn" class="btn primary">Calculate</button>
+          <button id="saveBtn" class="btn">Save</button>
+          <button id="clearBtn" class="btn danger">Clear</button>
+        </div>
+
+        <p id="message" class="message"></p>
+      </div>
+
+      <div class="results">
+        <div class="result-line">
+          <span>Completed:</span>
+          <strong id="percentText">—</strong>
+        </div>
+        <div class="result-line">
+          <span>Estimated finish:</span>
+          <strong id="daysText">—</strong>
+        </div>
+
+        <div class="progress-outer">
+          <div class="progress-inner" id="progressBar"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/tracker.js"></script>
+  <script src="js/nav.js"></script>
+
+  <footer>
+  <div class="footer-content">
+
+    <!-- Left: Brand -->
+    <div class="footer-brand">
+      <h3>Readify</h3>
+      <p>Reading is Fun</p>
+      <div class="social-icons">
+        
+      </div>
+    </div>
+
+    <!-- Middle: Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="explorer.html">Explorer</a>
+      <a href="tracker.html">Tracker</a>
+      <a href="recommender.html">Books</a>
+      <a href="flow.html">Flow</a>
+    </div>
+
+    <!-- Right: Newsletter -->
+    <div class="footer-news">
+      <h4>Newsletter</h4>
+      <input type="email" id="emialInput" placeholder="Enter Your email">
+      <button id="subscribebtn">Subscribe</button>
+      <p id="message"></p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Readify • All rights reserved</p>
+  </div>
+</footer>
+</body>
+</html>

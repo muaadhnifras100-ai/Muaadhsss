@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify | FEEDBACK</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <body>
+    <!--NAVBAR-->
+    <Header class="navbar">
+    <div class="logo">
+      <img src="Picture/logi.jpg" alt="Readify Logo">
+      <span>Readify</span>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">HOME</a>
+      <a href="explorer.html">EXPLORER</a>
+      <a href="tracker.html">TRACKER</a>
+      <a href="recommender.html">BOOKS</a>
+      <a href="flow.html">FLOW</a>
+      <a class="active" href="feedback.html">FEEDBACK</a>
+
+    </nav>
+    <div class="Hamburger" id="Hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </Header>
+    <main class="fb-main">
+    <section class="fb-box">
+      <h1>Feedback</h1>
+      <p>Send us your feedback. We store it in localStorage for this assignment.</p>
+
+      <form id="feedbackForm" class="fb-form">
+        <div class="fb-field">
+          <label for="nameInput">Name</label>
+          <input type="text" id="nameInput" placeholder="Enter your name">
+          <small class="fb-error" id="nameErr"></small>
+        </div>
+
+        <div class="fb-field">
+          <label for="emailInput">Email</label>
+          <input type="email" id="emailInput" placeholder="Enter your email">
+          <small class="fb-error" id="emailErr"></small>
+        </div>
+
+        <div class="fb-field">
+          <label for="msgInput">Message</label>
+          <textarea id="msgInput" rows="5" placeholder="Write your message..."></textarea>
+          <small class="fb-error" id="msgErr"></small>
+        </div>
+
+        <button type="submit" class="fb-btn">Submit Feedback</button>
+
+        <p id="successMsg" class="fb-success"></p>
+      </form>
+    </section>
+
+    <section class="fb-box">
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <button class="faq-q">How is my feedback stored?</button>
+        <div class="faq-a">
+          <p>Your feedback is stored in your browser localStorage for this assignment.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Do you send emails?</button>
+        <div class="faq-a">
+          <p>No. This is a front-end only project, so nothing is sent to a server.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Can I edit my feedback later?</button>
+        <div class="faq-a">
+          <p>You can submit again. Each submission is saved as a new entry.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- small extra section -->
+    
+    <script src="js/feedback.js"></script>
+    <script src="js/nav.js"></script>
+
+  </main>
+
+  <footer>
+  <div class="footer-content">
+
+    <!-- Left: Brand -->
+    <div class="footer-brand">
+      <h3>Readify</h3>
+      <p>Reading is Fun</p>
+      <div class="social-icons">
+        
+      </div>
+    </div>
+
+    <!-- Middle: Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="explorer.html">Explorer</a>
+      <a href="tracker.html">Tracker</a>
+      <a href="recommender.html">Books</a>
+      <a href="flow.html">Flow</a>
+    </div>
+
+    <!-- Right: Newsletter -->
+    <div class="footer-news">
+      <h4>Newsletter</h4>
+      <input type="email" id="emialInput" placeholder="Enter Your email">
+      <button id="subscribebtn">Subscribe</button>
+      <p id="message"></p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Readify • All rights reserved</p>
+  </div>
+</footer>
+    
+</body>
+</html>
